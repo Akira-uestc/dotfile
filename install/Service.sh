@@ -1,4 +1,4 @@
-#!/usr/bash
+#!/usr/bin/bash
 
 #clash daemon
 cd /etc/systemd/system/

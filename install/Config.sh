@@ -1,3 +1,4 @@
+#!/usr/bin/bash
 #Chrome config
 cd /home/$USER/.config/
 touch chrome-flags.conf
