@@ -31,3 +31,9 @@ zimfw install
 #wine
 sudo pacman -S wine winetricks zenity lib32-gnutls lib32-pipewire
 winetricks d3dx9 quartz devenum wmp10 gdiplus dotnet40 ffdshow vcrun6 cjkfonts
+
+#nvim
+cd /home/$USER/.config
+mkdir nvim
+chmod 777 nvim
+mv /home/$USER/dotfile/.config/nvim/* nvim/
