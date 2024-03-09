@@ -60,3 +60,11 @@ cp /home/$USER/dotfile/file/UESTC-WIFI.py ./
 systemctl enable UESTC_WIFI.service
 systemctl daemon-reload
 systemctl start UESTC_WIFI.service
+
+#POWER
+systemctl enable tlp.service
+systemctl mask systemctl-rfkill.service
+systemctl mask systemctl-rfkill.socket
+
+#Bluetooth
+systemctl enable --now bluetooth
