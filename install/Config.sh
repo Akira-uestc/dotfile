@@ -65,3 +65,8 @@ EOF
 
 sudo mv /home/$USER/dotfile/mirrorlist /etc/pacman.d/
 sudo mv /home/$USER/dotfile/makepkg.conf /etc/
+
+cd /etc/modprobe.d/
+touch disable-dmic.conf
+chmod 777 disable-dmic.conf
+echo "options snd_hda_intel dmic_detect=0" >>disable-dmic.conf
